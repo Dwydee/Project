@@ -1,0 +1,13 @@
+<div class="your-search">
+    <h1 class="underline"><span class="bold">Most rated products</span></h1>
+    <div class="products" >
+        <div class="product" *ngFor="let product of product">
+            <div class="rate"> {{product.rating.rate}} </div>
+            <img [src]="product.image" [alt]="product.image" width="300" height="300">
+            <div style="overflow: hidden;text-overflow: ellipsis; text-align: center;" >{{product.title}}</div>
+            <br>
+            <button [routerLink]="['/catalog','']">Check more items</button>
+            <br>
+        </div>
+    </div>
+</div>

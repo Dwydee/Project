@@ -1,0 +1,27 @@
+<div class="background">
+    <div class="main">
+        <div class="intro">
+            <h1><a routerLink="/home"><span>Shop</span>cart</a></h1>
+            <p>Register and make your first purchase with 10% sale!</p>
+            <br>
+            <img src="https://blog.blueyonder.com/wp-content/uploads/2019/12/BY-Retail.jpg" alt="" srcset="">
+        </div>
+        <div class="signup">
+            <h1>Create Account</h1>
+            <form (ngSubmit)="registration()">
+                <input type="text" name="username" [(ngModel)]="credentials.username" placeholder="Username" required><br>
+                <input type="email" name="email" [(ngModel)]="credentials.email" placeholder="Email" required><br>
+                <input type="password" name="password" [(ngModel)]="credentials.password" placeholder="Password" required><br>
+                <div>
+                    <input class="input" class="" type="checkbox" name="checkbox" id="checkbox" required>
+                    <label for="checkbox">I have read and agreed to the <a routerLink="../privacyterms">Terms of Service</a> and <a routerLink="../privacyterms">Privacy Policy</a></label><br>
+                </div>
+                <br>
+                <button id="btn">Create Account</button><br>
+            </form>
+            <p>Already have an account? <a routerLink="../login">Log in</a></p>
+            <p>Having a problem? <a routerLink="/contact">Support</a></p>
+            <a routerLink="/home"><p><-- Go back</p></a>
+        </div>
+    </div>
+</div>

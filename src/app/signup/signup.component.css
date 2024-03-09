@@ -1,0 +1,195 @@
+.background{
+    background-image: url(https://imsnip.ru/wp-content/uploads/2023/09/%D0%92%D0%B8%D0%B4%D1%8B-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%BE%D0%B2-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D1%85-%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+span{
+    color: gray;
+}
+
+.main{
+    padding-top: 5%;
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+}
+
+.intro{
+    background-color: #51C8BC;
+    border-radius: 25px;
+    width: 50%;
+    padding-left: 1%;
+    padding-top: 2%;
+    color: white;
+    font-size: large;
+}
+
+.intro img{
+    z-index: 2;
+    margin: auto;
+    width: 88%;
+}
+
+.intro p{
+    width: 65%;
+}
+
+.signup{
+    padding-top: 2%;
+    width: 50%;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid black;
+    z-index: 1;
+    position: relative;
+    right: 5%;
+    box-shadow: 0px 0px 40px 1px rgb(0, 0, 0);
+    backdrop-filter: blur(15px);
+    color: black;
+    text-align: center;
+}
+
+.signup form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    font-size: large;
+    width: 50%;
+    margin: auto;
+    border: 0;
+    border-bottom: 1px solid black;
+    background: transparent;
+    color: black;
+    text-align: center;
+}
+
+form input::placeholder{
+    color: black;
+}
+
+form div{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.input{
+    width: 100%;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    text-align: center;
+}
+
+
+button{
+    width: 50%;
+    height: 3vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 0;
+    background-color: #51C8BC;
+    letter-spacing: 0.2cap;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: black;
+    transition: 0.2s;
+}
+
+
+@media screen and (max-width:767px) {
+    .background{
+        height: 150%;
+    }
+
+    .main{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .intro{
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro p{
+        width: auto;
+    }
+
+    .intro img{
+        margin: auto;
+        width: 88%;
+        position: relative;
+        bottom: 5%;
+    }
+
+    .signup{
+        width: 100%;
+        right: 0%;
+    }
+
+    button{
+        width: 75%;
+        height: 5vh;
+    }
+
+
+}
+
+@media screen and (min-width:767px) and (max-width:1366px) {
+    .background{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .intro{
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro p{
+        width: auto;
+    }
+
+    .intro img{
+        margin: auto;
+        width: 88%;
+        position: relative;
+        bottom: 5%;
+    }
+
+    .signup{
+        width: 100%;
+        right: 0%;
+    }
+
+    button{
+        width: 75%;
+        height: 5vh;
+    }
+}

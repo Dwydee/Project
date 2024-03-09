@@ -1,0 +1,17 @@
+<div class="background">
+    <div class="main">
+        <div class="log-in">
+            <h1><a class="logo" routerLink="/home"><span class="bold">Shop</span>cart</a></h1>
+            <h1>Log in your account</h1>
+                <form (ngSubmit)="signIn()">
+                <input type="text" name="username" [(ngModel)]="credentials.username" placeholder="username" required><br>
+                <input type="password" name="password" [(ngModel)]="credentials.password" placeholder="password" required><br>
+                <button><p>Log In</p></button>
+            </form>
+            <br>
+            <p>Don't have an account? <a routerLink="../signup">Register</a></p>
+            <p>Having a problem? <a routerLink="/about">Support</a></p>
+            <a routerLink="/home"><p><-- Go back</p></a>
+        </div>
+    </div>
+</div>

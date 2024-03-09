@@ -1,0 +1,15 @@
+<div class="main">
+    <div class="product">
+        <div class="product-image">
+            <img [src]="product.image" [alt]="product.image" width="300" height="300">
+        </div>
+        <div class="product-title">{{product.title}}</div>
+        <p style="overflow: hidden;text-overflow: ellipsis;">{{product.description}}</p>
+        <button (click)="addItem(product)" [ngClass]="{'hide': inCart, 'show': !inCart}" ><div class="original">Buy</div><div class="letters"><span>{{product.price}}$</span></div></button>                  
+        <button (click)="removeItem(product)" [ngClass]="{'hide': !inCart, 'show': inCart}" ><div class="original">Remove</div><div class="letters"><span>Are you sure?</span></div></button>                  
+    </div>
+</div>
+
+
+
+

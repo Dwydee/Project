@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+    color: #51C8BC;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    gap: 2vh;
+    height: 45vh;
+}
+
+form input{
+    width: 50%;
+    border: 0;
+    border-bottom: solid rgba(0, 0, 0, 0.3) 1px;
+}
+
+textarea{
+    width: 50%;
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+}
+
+button{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 3vh;
+    border-radius: 10px;
+    border: 0;
+    background-color: #51C8BC;
+    letter-spacing: 0.2cap;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: black;
+    transition: 0.2s;
+}
+
+@media screen and (max-width:767px) {
+    form input{
+        width: 90%;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    button{
+        width: 50%;
+        height: 20%;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1366px) {
+    form input{
+        width: 90%;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    button{
+        width: 50%;
+        height: 10%;
+        align-items: center;
+        font-size: larger;
+    }
+}

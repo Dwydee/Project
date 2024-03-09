@@ -1,0 +1,96 @@
+span{
+    color: #51C8BC;
+}
+
+section{
+    text-align: center;
+    color: #51C8BC;
+}
+
+section p{
+    font-size: x-large;
+    font-weight: 700;
+    border-bottom: solid rgba(0, 0, 0, 0.3) 2px;
+    width: 15%;
+    margin: auto;
+    color: black;
+}
+
+.history{
+    width: 75%;
+    margin: auto;
+}
+
+.history-covered{
+    background: rgb(81,200,188);
+    background: linear-gradient( rgba(81,200,188,1) 0%, rgba(197,255,249,1) 100%);
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding: 5%;
+    border-radius: 3cap;
+    text-align: center;
+}
+
+.history-image{
+    background-image: url(https://st2.depositphotos.com/1006832/6017/i/950/depositphotos_60178113-stock-photo-clothes-shop-interior.jpg);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 40% 6% 6% 6% / 29% 12% 12% 12% ;
+    width: 40%;
+    height: 25vh;
+    margin: auto;
+    position: relative;
+    bottom: 5vh;
+    z-index: 1;
+}
+
+.advantages{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.advantage{
+    position: relative;
+    top: 2vh;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+    section p{
+        width: 50%;
+    }
+
+    .history{
+        width: 95%;
+    }
+
+    .history-image{
+        width: 60%;
+        bottom: 4vh;
+    }
+
+    .advantages{
+        display: block;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1366px) {
+    section p{
+        width: 50%;
+    }
+
+    .history-image{
+        width: 60%;
+        bottom: 3vh;
+    }
+
+    .history-covered{
+        font-size: large;
+    }
+
+    .advantages{
+        width: 95%;
+    }
+}

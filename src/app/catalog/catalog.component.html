@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let product of filteredProducts() ">
+        <side-product [product] = "product" (buy)="addToCart(product)"></side-product>
+    </li>
+</ul>
+
+
+
+
+

@@ -1,0 +1,14 @@
+<div class="cart-list">
+    <ul>
+        <li *ngFor="let product of products">
+            <side-product [product] = "product" (remove)="removeItem(product)"></side-product>
+        </li>
+    </ul>
+    <div class="last">
+        <div class="subtotal"><p>Subtotal</p><p>${{totalprice}}</p></div>
+        <div class="salestax"><p>Sales tax</p><p>${{taxprice}}</p></div>
+        <div class="grandtotal"><p>Grand total</p><p>$ {{totalprice + taxprice}} </p></div>
+        <button class="buybutton" (click)="buyItems()"><div class="original">Buy</div><div class="letters"><span> ${{totalprice + taxprice}} </span></div></button>
+    </div>
+</div>
+<br>

@@ -1,0 +1,61 @@
+<div class="div">
+    <header>
+        <div class="container" fxLayout="row wrap" fxLayoutAlign="start center">
+            <div class="navbar-mobile-top" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+                <div class="navbar-logo">
+                    <a routerLink="/home"><span class="bold">Shop</span>cart</a>
+                </div>
+                <button span-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+                    <svg viewBox="0 0 32 32" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2" id="Layer_2"><path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z"/><path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/><path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/></g><g id="frame"><rect class="cls-1"/></g></svg>
+                </button>
+            </div>
+            <div fxFlex class="top-navbar">
+                <div class="navigation">
+                    <a class="navbartop-btn" routerLink="/home">Home</a>
+                    <a class="navbartop-btn" [routerLink]="['/catalog','']">Catalog</a>
+                    <a class="navbartop-btn" routerLink="/about">About us</a>
+                    <a class="navbartop-btn" routerLink="/cart">Cart</a>
+                </div>
+                <div class="col">
+                    <div ngbDropdown class="d-inline-block" >
+                        <button type="button" class="btn btn-outline-info" id="dropdownBasic1" ngbDropdownToggle>
+                            Search category
+                        </button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem><a routerLink="/catalog/men's clothing" class="category">
+                                <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M17 11C17 9.89543 17.8954 9 19 9H21V4H15.874C15.4299 5.72523 13.8638 7 12 7C10.1362 7 8.57006 5.72523 8.12602 4H3V9H5C6.10457 9 7 9.89543 7 11V20H17V11ZM2 11C1.44772 11 1 10.5523 1 10V4C1 2.89543 1.89543 2 3 2H9.5C9.77614 2 10 2.22386 10 2.5V3C10 4.10457 10.8954 5 12 5C13.1046 5 14 4.10457 14 3V2.5C14 2.22386 14.2239 2 14.5 2H21C22.1046 2 23 2.89543 23 4V10C23 10.5523 22.5523 11 22 11H19V20C19 21.1046 18.1046 22 17 22H7C5.89543 22 5 21.1046 5 20V11H2Z" fill="black" fill-rule="evenodd"/></svg>
+                                <p>Men's clothing</p>
+                            </a></button>
+                            <button ngbDropdownItem><a routerLink="/catalog/jewelery" class="category">
+                                <svg height="24" width="24" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                                    .st0{fill:#3B4652;}
+                                    .st1{fill:#51C8BC;}
+                                </style><g><path class="st0" d="M312,193.1H200c-55,22.2-93.8,76.1-93.8,139c0,82.8,67.1,149.9,149.9,149.9s149.9-67.1,149.9-149.9   C405.9,269.2,367,215.3,312,193.1z M256,436.3c-57.5,0-104.1-46.6-104.1-104.1c0-57.5,46.6-104.1,104.1-104.1   s104.1,46.6,104.1,104.1C360.1,389.7,313.5,436.3,256,436.3z"/><rect class="st0" height="26.5" width="116" x="198" y="152.7"/><polygon class="st1" points="249,53.8 194.5,86.9 249,108.7  "/><polygon class="st1" points="249,138.7 249,123.8 191.6,100.9 210.1,138.7  "/><path class="st1" d="M316.3,86.2L263,53.8v54.8c7.7-3.3,19.1-8.1,30.4-12.8C302.4,91.9,310.1,88.7,316.3,86.2z"/><path class="st1" d="M321.1,99.4c-16,6.6-39.9,16.6-58.1,24.3v15h38.9L321.1,99.4z"/><path class="st0" d="M414.5,106.3h-40.7c-3.9,0-7,3.1-7,7s3.1,7,7,7h40.7c3.9,0,7-3.1,7-7S418.4,106.3,414.5,106.3z"/><path class="st0" d="M348.2,65.3c1.8,0,3.6-0.7,5-2l21.3-21.3c2.7-2.7,2.7-7.2,0-9.9c-2.7-2.7-7.2-2.7-9.9,0l-21.3,21.3   c-2.7,2.7-2.7,7.2,0,9.9C344.6,64.6,346.4,65.3,348.2,65.3z"/><path class="st0" d="M145.2,113.3c0-3.9-3.1-7-7-7H97.5c-3.9,0-7,3.1-7,7s3.1,7,7,7h40.7C142,120.3,145.2,117.2,145.2,113.3z"/><path class="st0" d="M158.9,63.3c1.4,1.4,3.2,2,5,2s3.6-0.7,5-2c2.7-2.7,2.7-7.2,0-9.9L147.5,32c-2.7-2.7-7.2-2.7-9.9,0   c-2.7,2.7-2.7,7.2,0,9.9L158.9,63.3z"/></g></svg>
+                                <p >Jewelery</p>
+                            </a></button>
+                            <button ngbDropdownItem><a routerLink="/catalog/electronics" class="category">
+                                <svg height="24" width="24" enable-background="new 0 0 52 52" id="Layer_1" version="1.1" viewBox="0 0 52 52" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M49,19.5v-2h-6.9984131v-7.4957886H14.4016113l-4.4000244,4.5300293v27.4699707H17.5V49h2v-6.9957886h3V49h2v-6.9957886h3   V49h2v-6.9957886h3V49h2v-6.9957886h2.8115845l4.6900024-5.6400146V34.5H49v-2h-6.9984131v-3H49v-2h-6.9984131v-3H49v-2h-6.9984131   v-3H49z M36.0015869,33.5042114c0,1.6500244-1.3499756,3-3,3h-14c-1.6599731,0-3-1.3499756-3-3v-14c0-1.6599731,1.3400269-3,3-3h14   c1.6500244,0,3,1.3400269,3,3V33.5042114z"/><rect height="2" width="7" x="3" y="17.5"/><rect height="2" width="7" x="3" y="22.5"/><rect height="2" width="7" x="3" y="27.5"/><rect height="2" width="7" x="3" y="32.5"/><rect height="7" width="2" x="32.5" y="3"/><rect height="7" width="2" x="27.5" y="3"/><rect height="7" width="2" x="22.5" y="3"/></g></svg>
+                                <p >Electronics</p>
+                            </a></button>
+                            <button ngbDropdownItem><a routerLink="/catalog/women's clothing" class="category">
+                                <svg height="24" width="24" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Guides"/><g id="_x32_0"/><g id="_x31_9"/><g id="_x31_8"/><g id="_x31_7"/><g id="_x31_6"/><g id="_x31_5"/><g id="_x31_4"/><g id="_x31_3"/><g id="_x31_2"/><g id="_x31_1"/><g id="_x31_0"/><g id="_x30_9"/><g id="_x30_8"/><g id="_x30_7"/><g id="_x30_6"/><g id="_x30_5"/><g id="_x30_4"><path d="M28,24h-6.0195c-0.2813,0-0.5488-0.1182-0.7383-0.3257c-0.1895-0.208-0.2832-0.4858-0.2578-0.7656l1.0078-11   c0.0508-0.5498,0.5459-0.9521,1.0869-0.9043c0.5508,0.0503,0.9551,0.5371,0.9053,1.0869L23.0762,22h3.8135   c-0.2451-2.3521-0.7959-7.7773-0.8955-9.9546c-0.0449-0.9917-0.0029-2.8682-0.001-2.9473c0-1.0762-0.4316-2.1099-1.2158-2.8887   c-0.2715-0.27-1.6807-1.0435-3.1387-1.7725l-0.208,0.811C21.0479,6.3965,19.9473,8,18.4014,8h-4.9248   c-1.5469,0-2.6465-1.6035-3.0088-2.6816l-0.2344-0.9126C8.7822,5.0864,7.375,5.8193,7.1006,6.0884   C6.3164,6.8662,5.8848,7.9004,5.8848,9c0.0039,0.0039,0.167,2.0249,0.1211,3.0454C5.9063,14.2227,5.3555,19.6479,5.1104,22h3.6904   l-0.9072-9.9087c-0.0498-0.5503,0.3545-1.0366,0.9053-1.0869c0.541-0.0464,1.0361,0.3545,1.0869,0.9043l1.0068,11   c0.0254,0.2803-0.0684,0.5576-0.2578,0.7656C10.4453,23.8818,10.1777,24,9.8965,24H4c-0.2842,0-0.5537-0.1206-0.7441-0.3315   c-0.1895-0.2109-0.2803-0.4927-0.25-0.7749c0.0088-0.082,0.8789-8.2427,1.002-10.939c0.0342-0.7427-0.0752-2.3257-0.1201-2.873   C3.8848,7.3633,4.5264,5.8252,5.6914,4.6689c0.7617-0.7568,3.8721-2.1685,4.8076-2.583c0.2686-0.1201,0.5771-0.1133,0.8418,0.0142   c0.2646,0.1284,0.459,0.3672,0.5322,0.6519l0.5117,2C12.5986,5.3794,13.1816,6,13.4766,6h4.9248   c0.2949,0,0.8779-0.6206,1.1123-1.3184l0.4912-1.9297c0.0742-0.2896,0.2734-0.5308,0.5439-0.6572   c0.2715-0.1265,0.584-0.1255,0.8535,0.002c0.9326,0.4429,4.0313,1.9458,4.7852,2.6938c1.1475,1.1401,1.8057,2.7188,1.8057,4.3306   c-0.001,0.042-0.043,1.9102-0.001,2.8335c0.123,2.6963,0.9932,10.8569,1.002,10.939c0.0303,0.2822-0.0605,0.564-0.25,0.7749   C28.5537,23.8794,28.2842,24,28,24z"/><path d="M24,30c-0.1064,0-0.2129-0.0166-0.3164-0.0513l-2.249-0.7495c-0.2793-0.0938-0.5879-0.0938-0.8691,0L19.25,29.6377   c-0.8564,0.2861-1.7725,0.2197-2.5771-0.1831c-0.4443-0.2222-0.9043-0.2227-1.2881-0.0288   c-0.8643,0.4316-1.7813,0.4966-2.6348,0.2119l-1.3154-0.4385c-0.2793-0.0938-0.5879-0.0938-0.8691,0l-2.249,0.7495   c-0.3369,0.1128-0.71,0.0376-0.9785-0.1992c-0.2666-0.2358-0.3887-0.5962-0.3184-0.9458l1-5   c0.1074-0.542,0.6367-0.8926,1.1768-0.7842c0.541,0.1084,0.8926,0.6353,0.7842,1.1768l-0.6621,3.3101l0.6143-0.2046   c0.6875-0.2295,1.4473-0.2295,2.1348,0l1.3154,0.4385c0.3486,0.1162,0.7227,0.0894,1.0498-0.0747   c1.002-0.501,2.1309-0.5015,3.0771-0.0288c0.3877,0.1938,0.7607,0.2202,1.1074,0.1035l1.3154-0.4385   c0.6875-0.2295,1.4473-0.2295,2.1348,0l0.6143,0.2046l-0.6621-3.3101c-0.1084-0.5415,0.2432-1.0684,0.7842-1.1768   c0.5459-0.1079,1.0693,0.2432,1.1768,0.7842l1,5c0.0703,0.3496-0.0518,0.71-0.3184,0.9458C24.4766,29.9136,24.2402,30,24,30z"/></g><g id="_x30_3"/><g id="_x30_2"/><g id="_x30_1"/></svg>
+                                <p >Women's clothing</p>
+                            </a></button>
+                            <button ngbDropdownItem ><a [routerLink]="['/catalog','']" class="category">
+                                <svg height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M6 6v36h36v-36h-36zm16 32h-12v-12h12v12zm0-16h-12v-12h12v12zm16 16h-12v-12h12v12zm0-16h-12v-12h12v12z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>
+                                <p>View all</p>
+                            </a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="account"> 
+                    <button class="sign-up" routerLink="/signup" [ngClass]="{'hide': accountbutton.length > 1, 'show': accountbutton.length < 1}" >Sign Up</button>
+                    <button class="log-in" routerLink="/login" [ngClass]="{'hide': accountbutton.length > 1, 'show': accountbutton.length < 1}" >Log in</button>
+                    <p class="username" [ngClass]="{'hide': accountbutton.length < 1, 'show': accountbutton.length > 1}"> {{username}} </p>
+                    <button class="logout" (click)="logOut()" [ngClass]="{'hide': accountbutton.length < 1, 'show': accountbutton.length > 1}">Log out</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="line"></div>
+</div>

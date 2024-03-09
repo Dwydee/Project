@@ -1,0 +1,35 @@
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: auto;
+    gap: 3%;
+}
+
+li{
+    gap: 3%;
+}
+
+@media screen and (max-width: 767px) {
+    ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 25%;
+        margin: auto;
+        margin-left: 0;
+    }
+  
+    li{
+        margin: auto;
+    }
+
+    .product{
+      width: 60vw;
+      height: 70vh;
+      margin: auto;
+    }
+  
+    
+}

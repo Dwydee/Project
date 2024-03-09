@@ -1,0 +1,397 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 1%;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.bold{
+    font-weight: 700;
+    color: #51C8BC;
+}
+
+.col{
+    width: 15%;
+    height: 15%;
+    margin-left: 10%;
+    margin-top: 0.4%;
+}
+
+.top-navbar{
+    margin-top: 0.4%;
+    display: flex;
+    width: 60%;
+}
+
+.account{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    gap: 5%;
+    align-items: center;
+}
+
+.username{
+    margin-top: 5%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;    
+    margin: auto;
+    width: 40%;
+}
+
+.navigation a{
+    color: #51C8BC;
+}
+
+.sign-up{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    height: 70%;
+    margin: auto;
+}
+
+.sign-up:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.log-in{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    height: 70%;
+    margin: auto;
+}
+
+.log-in:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.logout{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    height: 70%;
+    margin: auto;
+}
+
+.logout:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.navbar-fixed {
+    position: fixed !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 !important;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    animation: 0.6s slideDown forwards;
+    }
+
+    .navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.navbar-toggle {
+    display: none !important;
+    border: 0;
+}
+
+.icon-button {
+    span {
+    font-size: 20px;
+    }
+}
+
+.navbartop-btn{
+    height: 20%;
+}
+
+.navbartop-btn {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .navbartop-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #51C8BC;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbartop-btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.navbar-mobile-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line{
+    background-color: #808080;
+    width: 80%;
+    height: 0.2vh;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+@media screen and (max-width:767px) {
+    .navbar-toggle {
+        display: block !important;
+    }
+    
+    .navbar-opened:host .container {
+        height: auto !important;
+        padding: 0px !important;
+    }
+    
+    .navbar-logo {
+        margin-left: 15px;
+    }
+    
+    .top-navbar {
+        display: none !important;
+    }
+    
+    .navbar-opened:host {
+        .top-navbar {
+            display: block !important;
+            width: 100% !important;
+            height: auto;
+            flex: none !important;
+            color: #000;
+            background: #f3f3f3;
+        }
+    }
+    
+    .navbar-opened:host .top-navbar a {
+        display: block;
+        width: 100%;
+        line-height: 56px !important;
+    }
+    
+    .navigation{
+        display: flex;
+        width: 100%;
+    }
+
+    .col{
+        margin-left: 0;
+        margin-top: 5%;
+        width: 50%;
+        margin: auto;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .account{
+        text-align: center;
+        width: 60%;
+        height: 8vh;
+        margin: auto;
+    }
+
+    .sign-up{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.4s;
+        height: auto;
+        width: 40%;
+        margin: auto;
+        font-size: small;
+        
+    }
+    
+    .sign-up:hover{
+        border: 1px solid rgb(255, 255, 255);
+        background-color: black;
+        color: white;
+        transition: 0.2s;
+    }
+    
+    .log-in{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.4s;
+        height: auto;
+        width: 40%;
+        margin: auto;
+        font-size: small;
+        
+    }
+    
+    .log-in:hover{
+        border: 1px solid rgb(255, 255, 255);
+        background-color: black;
+        color: white;
+        transition: 0.2s;
+    }
+
+
+}
+
+
+@media screen and (min-width:767px) and (max-width:1366px) {
+    .navbar-toggle {
+        display: block !important;
+    }
+    
+    .navbar-opened:host .container {
+        height: auto !important;
+        padding: 0px !important;
+    }
+    
+    .navbar-logo {
+        margin-left: 15px;
+    }
+    
+    .top-navbar {
+        display: none !important;
+    }
+    
+    .navbar-opened:host {
+        .top-navbar {
+            display: flex !important;
+            width: 100% !important;
+            height: auto;
+            flex: none !important;
+            color: #000;
+            background: #f3f3f3;
+        }
+    }
+    
+    .navbar-opened:host .top-navbar a {
+        display: block;
+        width: 100%;
+        line-height: 56px !important;
+    }
+    
+    .navigation{
+        display: block;
+        width: 25%;
+    }
+
+    .col{
+        margin-left: 0;
+        margin-top: 5%;
+        position: relative;
+        left: 10%;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .account{
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        width: 26%;
+        height: 13vh;
+    }
+
+    .username{
+        margin-right: 25%;
+    }
+
+    .sign-up{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.4s;
+        height: auto;
+        width: 90%;
+        margin: auto;
+        font-size: small;
+        
+    }
+    
+    .sign-up:hover{
+        border: 1px solid rgb(255, 255, 255);
+        background-color: black;
+        color: white;
+        transition: 0.2s;
+    }
+    
+    .log-in{
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.4s;
+        height: auto;
+        width: 90%;
+        margin: auto;
+        font-size: small;
+        
+    }
+    
+    .log-in:hover{
+        border: 1px solid rgb(255, 255, 255);
+        background-color: black;
+        color: white;
+        transition: 0.2s;
+    }
+
+
+}

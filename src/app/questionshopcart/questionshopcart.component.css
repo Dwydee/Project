@@ -1,0 +1,53 @@
+.bold{
+    font-weight: 700;
+    color: #51C8BC;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.question-shopcart{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.anwsers{
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.anwser{
+    width: 33.3%;
+}
+
+@media screen and (max-width:767px) {
+    .anwsers{
+        display: block;
+        justify-content: unset;
+    }
+
+    .anwser{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1366px) {
+    *{font-size: larger;}
+
+    h1:nth-child(1){
+        font-size: 3rem;
+    }
+
+    .anwsers{
+        display: block;
+        justify-content: unset;
+    }
+
+    .anwser{
+        width: 100%;
+    }
+}

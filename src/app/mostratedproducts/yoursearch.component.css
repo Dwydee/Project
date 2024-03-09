@@ -1,0 +1,215 @@
+.your-search{
+    width: 80%;
+    margin: auto;
+}
+
+.your-search h1{
+    text-align: center;
+}
+
+.rate{
+    background-color: #51C8BC;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5cap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+    height: 3vh;
+    position: relative;
+    top: 5%;
+    left: 35%;
+    z-index: 1;
+}
+
+.underline{
+    border-bottom: 2px dashed black;
+}
+
+.products{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bold{
+    font-weight: 700;
+    color: #51C8BC;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button,
+button *,
+button :after,
+button :before,
+button:after,
+button:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+button:disabled {
+  cursor: default;
+}
+button:-moz-focusring {
+  outline: auto;
+}
+button svg {
+  display: block;
+}
+button [hidden] {
+  display: none;
+}
+button {
+  --background: #000;
+  background: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+button span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+button:after,
+button:before {
+  --tilt: 20px;
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+button:after {
+  --thickness: 5px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+button:hover span {
+  transform: translateX(-20px);
+}
+button:hover:after,
+button:hover:before {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+}
+
+
+@media screen and (max-width:767px) {
+
+    .rate{
+        width: 15%;
+    }
+
+    img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .underline{
+        width: 100%;
+    }
+
+    .products{
+        width: 50vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .product{
+        width: 50vw;
+    }
+
+    button{
+      font-size: small;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1366px) {
+    *{font-size: larger;}
+
+    .bold{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .rate{
+        width: 10%;
+        font-size: 1.5rem;
+    }
+
+    img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .underline{
+        width: 100%;
+    }
+
+    .products{
+        width: 50vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .product{
+        width: 50vw;
+    }
+}

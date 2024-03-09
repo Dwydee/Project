@@ -1,0 +1,29 @@
+<div class="cool-things">
+    <h1 class="cool">We picked some <span class="bold">cool things</span> for you!</h1>
+    <br>
+    <div class="catalog">
+        <h1 class="underline"><span class="bold">Hot deals for you</span> </h1>
+        <div class="products" >
+            <div class="product" *ngFor="let hProduct of hProduct">
+                <div class="rate"> {{hProduct.rating.rate}} </div>
+                <img [src]="hProduct.image" [alt]="hProduct.image" >
+                <div style="overflow: hidden;text-overflow: ellipsis; text-align: center;">{{hProduct.title}}</div>
+                <br>
+                <button [routerLink]="['/catalog','']">Check more items</button>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="products">
+            <div class="product" *ngFor="let hTProduct of hTProduct">
+                <div class="rate"> {{hTProduct.rating.rate}} </div>
+                <img [src]="hTProduct.image" [alt]="hTProduct.image" >
+                <div style="overflow: hidden;text-overflow: ellipsis; text-align: center;">{{hTProduct.title}}</div>
+                <br>
+                <button [routerLink]="['/catalog','']">Check more items</button>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
